@@ -104,9 +104,21 @@ section{
 
 @media screen and (max-width:674px){
     .main-content{
-        display: grid;
+        display:grid;
         grid-template-columns: repeat(1, 1fr);
         min-height: 1000px;
-        grid-template-areas: 'left' 'right';
+        grid-template-areas: 'left'
+        'right';
+         width: 90%;      
+    }   
+    .left-section{
+        grid-area: left;
+        display:block;
+        background-color: rgb(2, 74, 102); 
+    }
+    .right-section{
+        grid-area: right;
+        display:block;
+        background-color: rgb(149, 189, 241);
     }
 }
